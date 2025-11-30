@@ -20,6 +20,7 @@ async function searchService() {
 }
 
 async function searchShow(show, originImage) {
+  console.log(show);
   var index = 1
   fetch(url + show + "&page=" + index)
   .then(response => response.json()) 
@@ -67,4 +68,5 @@ async function morePages(index, originImage) {
     }
   })
   .catch(error => console.log('Error fetching data:', error));    
+
 }
