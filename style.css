@@ -15,7 +15,7 @@
   font-size: 16px;
   text-align: center;
   color: white;
-}
+} 
 
 .flex-container {
     display: flex;
@@ -62,5 +62,22 @@
 }
         
 .clipTitle:hover ~ .clipInfo{
+  display: block;
+}
+
+.rerun {
+  background-color: #2EBFE9;
+  width: 500px;
+  text-align: center;
+  font-family: PBSFont;
+  font-size: 20px;
+  color: white
+}
+
+.rerunInfo {
+  display: none;
+}
+        
+.rerunTitle:hover ~ .clipInfo{
   display: block;
 }
